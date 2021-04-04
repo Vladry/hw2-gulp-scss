@@ -1,0 +1,8 @@
+@font-face{
+  font-family: "Roboto"; /*тут font-family работает по-иному: оно НАЗНАЧАЕТ шрифту указанному
+    в url() имя Roboto, которым я потом буду подключать данный шрифт в моих СSS*/
+  src: url("../fonts/Roboto/Roboto-Regular.woff2");
+  /*src: url("../fonts/Roboto/Roboto-Light.woff"); -поэтому здесь НЕЛЬЗЯ подключать второй url()*/
+  font-style: normal;
+}
+

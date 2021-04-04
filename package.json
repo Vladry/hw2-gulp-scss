@@ -1,0 +1,28 @@
+{
+  "name": "homework-2-gulp-scss",
+  "version": "1.0.0",
+  "description": "Сверстать макет сайта в 3х разрешениях: 320px, 768px и 1200px, используя препроцессор SCSS и собирая проект с помощью менеджера задач Gulp. Дедлайн для выполнения данного домашнего задания - 1 неделя после четвертого занятия данного модуля.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
