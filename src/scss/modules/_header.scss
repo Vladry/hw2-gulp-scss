@@ -1,24 +1,4 @@
-menu {padding: 0 0 0 0 }
 
-.header-menu {
-}
-.--open {
-}
-.--close {
-}
-.wrapper {
-  position: relative;
-  font-family: Roboto, sans-serif;
-  margin-left: 25px;
-  margin-right: 28px;
-}
-h2 {
-  @include fontMixin(normal, bold, 14px, 22px, #4E4E4E);
-}
-h2::before {
-  content: '-';
-  padding-right: 4px;
-}
 
 .header-menu__tab   {
 
@@ -50,61 +30,23 @@ position: absolute;
   margin-bottom: 38px;
   width: 100%;
 }
-.header-menu__menu > li {
-  &:hover {
-    background: $hoverBackground;
-    &:hover> a {color: $hoverTextColor;}}
+
+.header-menu__menu-li {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
+.header-menu__menu-li {
+  &:hover {
+    cursor: pointer;
+    background: $hoverBackground;
+    &:hover> a {color: $hoverTextColor;}
+  }
+}
+
+
 .header-menu__menu-items {
   @include fontMixin(normal, normal, 11px, 22px, $menu-itemsColor);
-  padding-top: 6.5px;
   padding-left: 12px;
-  padding-bottom: 6.5px;
   text-transform: uppercase;
 }
-.post-container__image {
-  padding-top: 23px;
-  padding-bottom: 11px;
-}
-.post-container__header {
-  @include fontMixin(normal, bold, 14px, 30px, $postHeaderTextColor);
-}
 
-.post-container__description, .post-container__references {
-  @include fontMixin(normal, normal, 11px, 20px, $postDescriptionAndReferencesTextColor);
-  display: inline-block;
-}
-
-.instagram-shots {
-  margin-top: 78px;
-}
-.instagram-shots__image {
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-footer {
-  margin: 42px auto 10px auto;
-  text-align: center;
-  background: black;
-}
-.contact-details__header {
-  @include fontMixin(normal, bold, 14px, 22px, #FEFEFE);
-  text-transform: uppercase;
-  padding-top: 38px;
-}
-.contact-details__intro {
-  @include fontMixin(normal, normal, 12px, 20px, #B9B9B9);
-  margin-top: 8px;
-}
-.contact-details__social-media-tabs {
-  margin-top: 26px;
-  display: flex;
-  justify-content: center;
-  column-gap: 5px;
-}
-.contact-details__address {
-  @include fontMixin(normal, normal, 14px, 24px, #B9B9B9);
-  margin-top: 25px;
-  padding-bottom: 47px;
-}

@@ -1,0 +1,38 @@
+
+.instagram-shots {
+  margin-top: 78px;
+}
+
+.instagram-shots__header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.--small-screen-only { display: block; }
+
+.instagram-shots__header {
+  text-transform: uppercase;
+} //описан заголовком h2
+.instagram-shots__URL {
+  &::after {
+    content: "-";
+    padding-left: 4px;
+  }
+  &:hover {cursor: pointer}
+  @include fontMixin(normal, bold, 13px, 22px, #4E4E4E);
+  text-transform: uppercase;
+}
+
+.instagram-shots__img-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram-shots__image { padding: 13px 2px 13px 2px; }
+
+img[data-name="show-on-large-screens"] { display: none; }
+
+img[data-name="show-on-desktop"]  { display: none; }
+
+
+

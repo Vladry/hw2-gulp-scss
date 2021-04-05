@@ -1,0 +1,52 @@
+//@import "./variables";
+
+/* диапазон от 768 до 1200 px:  */
+@media (min-width: $breakpoint_768) {
+  div[data-name="show-on-large-screens"] {
+    display: flex;
+  }
+
+  .header-menu__tab {display: none;}
+
+  .header-menu__menu {
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+  }
+  .header-menu__image {margin-top: 43px;}
+  .--small-screen-only {display: none;}
+  img[data-name="show-on-large-screens"] { display: inline; }
+  .post-card__content { display: block; max-width: 404px;}
+  .post-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+  }
+
+  .header-menu__menu-li {
+    &:hover {
+      cursor: pointer;
+      background: white;
+      &:hover> a {color: $hoverTextColor;}
+    }
+  }
+
+}
+
+/* диапазон от 1200 */
+@media (min-Width: 1200px) {
+  /* раздел  header */
+  /* раздел posts */
+  .post-container {
+    display: flex;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  /* раздел instagram*/
+
+
+  img[data-name="show-on-desktop"]  { display: inline;}
+}

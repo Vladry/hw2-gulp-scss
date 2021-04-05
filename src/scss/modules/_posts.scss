@@ -1,0 +1,27 @@
+div[data-name="show-on-large-screens"] {
+  display: none;
+}
+
+.recent-posts__header { padding-bottom: 23px;}
+
+.post-container {display: block;}
+
+.post-card {margin-bottom: 20px;}
+
+.post-card__image { }
+
+.post-card__header {
+  @include fontMixin(normal, bold, 14px, 30px, $postHeaderTextColor);
+}
+.post-card__references>span {
+  padding-right: 15px;
+padding-left: 15px;}
+
+.post-card__description, .post-card__references {
+  @include fontMixin(normal, normal, 11px, 20px, $postDescriptionAndReferencesTextColor);
+  display: inline-block;
+}
+
+.post-card__content {
+  @include fontMixin(normal, normal, 14px, 26px, #5C5C5C);
+}

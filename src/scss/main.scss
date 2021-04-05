@@ -1,7 +1,11 @@
 @import "./reset";
 @import "./variables";
 @import "./mixins";
+@import "./pre-sets";
 @import "./modules/header";
-@import "style";
-
+@import "./modules/posts";
+@import "./modules/instagram";
+@import "./modules/footer";
+@import "./fonts";
+@import "./media";
 

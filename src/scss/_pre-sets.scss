@@ -1,0 +1,29 @@
+/*некоторые общие пред-устанавливаемые параметры:  */
+
+.post-card__content { display: none;}
+
+
+menu {padding: 0 0 0 0 }
+
+a {text-decoration: none}
+
+.header-menu {
+}
+.--open {
+}
+.--close {
+}
+.wrapper {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  margin-left: 25px;
+  margin-right: 28px;
+}
+h2 {
+  @include fontMixin(normal, bold, 14px, 22px, #4E4E4E);
+  text-transform: uppercase;
+  &::before {
+    content: '-';
+    padding-right: 4px;
+  }
+}

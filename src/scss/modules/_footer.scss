@@ -1,0 +1,40 @@
+
+footer {
+  margin: 42px auto 2px auto;
+  text-align: center;
+  background: black;
+}
+.contact-details__header {
+  @include fontMixin(normal, bold, 14px, 22px, #FEFEFE);
+  text-transform: uppercase;
+  padding-top: 38px;
+  &::before {
+    position: relative;
+    content: "-";
+    right: 0.5em;
+  }
+  &::after {
+    position: relative;
+    content: "-";
+    left: 0.5em;
+  }
+}
+.contact-details__intro {
+  @include fontMixin(normal, normal, 12px, 20px, #B9B9B9);
+  margin-top: 8px;
+}
+.contact-details__social-media-tabs {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+.contact-details__address {
+  @include fontMixin(normal, normal, 14px, 24px, #B9B9B9);
+  margin-top: 25px;
+  padding-bottom: 47px;
+}
+.contact-details__address > span {
+  padding-left: 15px;
+  padding-right: 15px;
+}
