@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*некоторые общие пред-устанавливаемые параметры:  */
+.post-card__content {
+  display: none; }
+
+menu {
+  padding: 0 0 0 0; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  margin-left: 25px;
+  margin-right: 28px; }
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #4E4E4E;
+  text-transform: uppercase; }
+  h2::before {
+    content: '-';
+    padding-right: 4px; }
+
+.header-menu__tab {
+  visibility: hidden;
+  position: absolute;
+  top: 23px;
+  right: 28px; }
+
+.header-menu__tab.--active {
+  visibility: visible; }
+
+.header-menu__menu {
+  position: absolute;
+  right: 0;
+  top: -400px;
+  transition: top 0.4s;
+  background-color: white;
+  min-width: 182px;
+  list-style-type: none; }
+
+.header-menu__menu.--active {
+  top: 56px;
+  transition: top 0.4s; }
+
+.header-menu__image {
+  margin-top: 83px;
+  margin-bottom: 38px;
+  width: 100%; }
+
+.header-menu__menu-li {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+.header-menu__menu-li:hover {
+  cursor: pointer;
+  background: #E5E5E5; }
+  .header-menu__menu-li:hover:hover > a {
+    color: #57A4A4; }
+
+.header-menu__menu-items {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 22px;
+  color: #4E4E4E;
+  padding-left: 12px;
+  text-transform: uppercase; }
+
+div[data-name="show-on-large-screens"] {
+  display: none; }
+
+.recent-posts__header {
+  padding-bottom: 23px; }
+
+.post-container {
+  display: block; }
+
+.post-card {
+  margin-bottom: 20px; }
+
+.post-card__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4E4E4E; }
+
+.post-card__references > span {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.post-card__description, .post-card__references {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 20px;
+  color: #7C7C7C;
+  display: inline-block; }
+
+.post-card__content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #5C5C5C; }
+
+.instagram-shots {
+  margin-top: 78px; }
+
+.instagram-shots__header-container {
+  display: flex;
+  justify-content: space-between; }
+
+.--small-screen-only {
+  display: block; }
+
+.instagram-shots__header {
+  text-transform: uppercase; }
+
+.instagram-shots__URL {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  color: #4E4E4E;
+  text-transform: uppercase; }
+  .instagram-shots__URL::after {
+    content: "-";
+    padding-left: 4px; }
+  .instagram-shots__URL:hover {
+    cursor: pointer; }
+
+.instagram-shots__img-container {
+  display: flex;
+  justify-content: space-between; }
+
+.instagram-shots__image {
+  padding: 13px 2px 13px 2px; }
+
+img[data-name="show-on-large-screens"] {
+  display: none; }
+
+img[data-name="show-on-desktop"] {
+  display: none; }
+
+footer {
+  margin: 42px auto 2px auto;
+  text-align: center;
+  background: black; }
+
+.contact-details__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FEFEFE;
+  text-transform: uppercase;
+  padding-top: 38px; }
+  .contact-details__header::before {
+    position: relative;
+    content: "-";
+    right: 0.5em; }
+  .contact-details__header::after {
+    position: relative;
+    content: "-";
+    left: 0.5em; }
+
+.contact-details__intro {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #B9B9B9;
+  margin-top: 8px; }
+
+.contact-details__social-media-tabs {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 5px;
+  column-gap: 5px; }
+
+.contact-details__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B9B9B9;
+  margin-top: 25px;
+  padding-bottom: 47px; }
+
+.contact-details__address > span {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+/* диапазон от 768 до 1200 px:  */
+@media (min-width: 768px) {
+  div[data-name="show-on-large-screens"] {
+    display: flex; }
+  .header-menu__tab {
+    display: none; }
+  .header-menu__menu {
+    display: flex;
+    justify-content: space-evenly;
+    position: static; }
+  .header-menu__image {
+    margin-top: 43px; }
+  .--small-screen-only {
+    display: none; }
+  img[data-name="show-on-large-screens"] {
+    display: inline; }
+  .post-card__content {
+    display: block;
+    max-width: 404px; }
+  .post-card {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    -moz-column-gap: 20px;
+    column-gap: 20px; }
+  .header-menu__menu-li:hover {
+    cursor: pointer;
+    background: white; }
+    .header-menu__menu-li:hover:hover > a {
+      color: #57A4A4; } }
+
+/* диапазон от 1200 */
+@media (min-Width: 1200px) {
+  /* раздел  header */
+  /* раздел posts */
+  .post-container {
+    display: flex;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-flow: row wrap; }
+  /* раздел instagram*/
+  img[data-name="show-on-desktop"] {
+    display: inline; } }
+
+/*# sourceMappingURL=styles.min.css.map */
